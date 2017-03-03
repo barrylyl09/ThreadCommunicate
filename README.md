@@ -116,4 +116,3 @@ NSOperationQueue *queue = [[NSOperationQueue alloc] init];
 - dispatch_semaphore_signal: 发送一个信号,让信号总量增加1
 
 - dispatch_semaphore_wait: 首先判断信号量是否大于零，如果大于零则减掉1个信号量，往下执行，如果等于零则阻塞该线程
-###**补充一个 DEMO：[链接](https://github.com/barrylyl09/ThreadCommunicate)**
