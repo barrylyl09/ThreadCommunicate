@@ -36,7 +36,7 @@
 /*
  *这里遇到一个非常好玩的事，按序执行完线程，刷新UI的显示特别缓慢 （如果把刷新UI放在BLock外，就会出现BUG）
  */
--(void)operationThreadDepend:(NSInteger )sequenceIdx {
+- (void)operationThreadDepend:(NSInteger )sequenceIdx {
     
     _noticeLabel.text = nil;
     
@@ -121,7 +121,7 @@
     
 }
 
--(void)selectBtnClick:(id)sender {
+- (void)selectBtnClick:(id)sender {
     NSInteger idx = ((UIButton *)sender).tag;
     switch (idx) {
         case 0:{

@@ -24,7 +24,7 @@
     [self selectBtnForWhichVC:@"homePageVC"];
 }
 
--(void)selectBtnClick:(id)sender {
+- (void)selectBtnClick:(id)sender {
     NSInteger idx = ((UIButton *)sender).tag;
     switch (idx) {
         case 0:{
@@ -52,7 +52,7 @@
     }
 }
 
--(void)createAlertView {
+- (void)createAlertView {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"查看线程依赖关系展示" message:@"please select" preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction* defaultAction1 = [UIAlertAction actionWithTitle:@"NSOperation添加单个线程依赖关系" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {

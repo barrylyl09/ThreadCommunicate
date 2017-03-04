@@ -50,7 +50,7 @@
     [self performSelectorOnMainThread:@selector(refreshImgView:) withObject:tempData waitUntilDone:YES];
 }
 
--(void)loadImg:(NSString *)url
+- (void)loadImg:(NSString *)url
 {
     NSData *imgData = [NSData dataWithContentsOfURL:[NSURL URLWithString:url]];
     
@@ -66,7 +66,7 @@
 
 }
 
--(void)refreshImgView:(NSData *)imgData {
+- (void)refreshImgView:(NSData *)imgData {
     
     if (imgData) {
         UIImage *image = [UIImage imageWithData:imgData];
@@ -77,7 +77,7 @@
     }
 }
 
--(void)selectBtnClick:(id)sender {
+- (void)selectBtnClick:(id)sender {
     NSInteger idx = ((UIButton *)sender).tag;
     switch (idx) {
         case 0:{
